@@ -3,6 +3,7 @@
 #  Modifica al file standalone.xml #
 ####################################
  
+ ```
 
    <datasource jta="false" jndi-name="java:/DefaultDS" pool-name="DefaultDS" enabled="true" use-java-context="true" use-ccm="true">
                     <connection-url>jdbc:oracle:thin:@10.35.20.49:1521:sanity</connection-url>
@@ -30,12 +31,12 @@
                 </datasource>
 
 
-
+```
 
 
 [.....]
 
-
+```
  <security-domain name="DBAuthTest">
                     <authentication>
                         <login-module code="org.jboss.security.auth.spi.DatabaseServerLoginModule" flag="required">
@@ -51,12 +52,13 @@
                         </login-module>
                     </authentication>
                 </security-domain>
-
+```
 
 #############################
 #  Modifica al file web.xml #
 ############################
 
+```
 La modifica può avvenire sia tramite il pannello "security" messo a disposizione da netbeans sia a livello testuale.
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -95,16 +97,17 @@ La modifica può avvenire sia tramite il pannello "security" messo a disposizion
         <role-name>admin</role-name>
     </security-role>
 </web-app>
-
+```
 
 ###################################
 #  Modifica al file jboss-web.xml #
 ###################################
 
  Impostare il security-domain con il nome java:/jass/ "nome dato al db in standalone" 
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
   <context-root>/ProvaLog</context-root>
    <security-domain>java:/jaas/DBAuthTest</security-domain>
 </jboss-web>
+```
