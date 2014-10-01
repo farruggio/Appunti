@@ -1,7 +1,7 @@
 Appunti
 =======
-
-
+####Export Android
+source ~/.bash_profile
 
 ##### Hide Status Bar IOS
 ##### Aggiungere queste due righe al file .plist
