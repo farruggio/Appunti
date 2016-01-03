@@ -17,3 +17,15 @@ source ~/.bash_profile
 
 https://github.com/devgeeks/ExampleHTML5AudioStreaming
 
+
+
+
+---------
+Allow connessione esterne
+<key>NSAppTransportSecurity</key>
+<dict>
+  <!--Include to allow all connections (DANGER)-->
+  <key>NSAllowsArbitraryLoads</key>
+      <true/>
+</dict>
+
