@@ -2,7 +2,7 @@
 
 # PostFix #
 
-
+11
 CentOS pulito , install postfix e dipendenze, manda mail a user e verso fuori.
 Ubuntu e Debian , install postfix, configurazione di grafica, manda mail user e verso fuori.
 
